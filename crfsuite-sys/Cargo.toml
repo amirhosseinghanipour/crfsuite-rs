@@ -22,13 +22,15 @@ exclude = [
     "crfsuite/frontend",
     "crfsuite/swig",
     "crfsuite/win32",
-    "crfsuite/lib/cqdb"
+    "crfsuite/lib/cqdb",
 ]
 
 [dependencies]
 libc = "0.2"
-liblbfgs-sys = "0.1.2"
 libcqdb = "0.3.0"
+
+[dependencies.liblbfgs-sys]
+git = "https://github.com/amirhosseinghanipour/liblbfgs-sys"
 
 [build-dependencies]
 cc = "1.0"
